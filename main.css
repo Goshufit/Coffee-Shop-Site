@@ -34,15 +34,18 @@ img {
     max-width: 100%;
 }
 
-/*navbar*/
+section a {
+    color: #fff;
+}
+
+/* navbar */
 .navbar {
     width: 100%;
     height: auto;
     background-color: #fff;
-    padding: 20 px;
-    box-shadow: 0 1px 3px rgb(0 0 0/ 10%),
-    0 2px 2px rgb(0 0 0 / 6%),
-    0 0 2 rgb(0 0 0 / 7%);
+    padding: 20px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%),
+    0 0 2px rgb(0 0 0 / 7%);
 }
 
 .navbar-container {
@@ -87,6 +90,28 @@ img {
     margin-right: 10px;
 }
 
+.navbar-nav-right li:nth-child(2) {
+    margin: 0 5px;
+}
+
+/* Box */
+
+.box {
+    margin-bottom: 30px;
+}
+
+.box-inner {
+    max-width:700px;
+    margin: 0 auto;
+}
+
+/* Grid Styles*/
+
+.grid-col-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 /*buttons*/
 .btn {
     cursor: pointer;
@@ -98,4 +123,116 @@ img {
     line-height: 1.2;
     text-align: center;
     text-decoration: none;
+}
+
+.btn-dark-outline {
+    border-color: #000;
+    color: #000;
+}
+
+.btn-dark-outline:hover {
+    background-color: rgba(0,0,0,0.06)
+}
+
+.btn-light-outline {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-dark {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-dark:hover {
+    background-color: #333;
+}
+
+/*Backgrounds*/
+
+.bg-primary {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.bg-secondary {
+    background-color: var(--color-secondary);
+    color: #fff;
+}
+
+.bg-extra {
+    background-color: var(--color-extra);
+    color: #000;
+}
+
+.bg-dark {
+    background-color: var(--color-dark);
+    color: #000;
+}
+
+/*text styling*/
+
+.text-center {
+    text-align: center;
+}
+
+.text-lg {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+.text-xl {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+.text-md {
+    font-size: 24px;
+    margin: 20px;
+}
+
+.text-sm {
+    font-size: 19px;
+    margin: 20px;
+}
+
+/* Padding */
+
+.py-sm {
+    padding: 10px 0;
+}
+
+.py-md {
+    padding: 20px 0;
+}
+
+.py-lg {
+    padding: 40px 0;
+}
+
+@media(max-width:960px) {
+    .text-xl {
+        font-size 30px;
+    }
+
+    .text-lg {
+        font-size 25px;
+    }
+
+    .text-md {
+        font-size 19px;
+    }
+
+}
+
+@media(min-width: 1440px) {
+    .box{
+        max-width: 1440px;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
